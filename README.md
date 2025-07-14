@@ -25,4 +25,19 @@ How will the AI know that we have arrived at our destination, solution? It is do
 10. Optimal solution - A solution that has the lowest path cost among all solutions.
 
 
+11. Node - a data structure that keeps track of
+    a state
+    a parent (node that generated this node.)
+    an action (action applied to parent to get node)
+    a path cost (from initial state to node)
 
+12. frontier - collection or a space where we got future states (potential solutions)
+
+13. The approach
+    Start with a frontier that contains the initial state.
+    Repeat:
+        if the frontier is emply, then no solution
+        remove a node from the frontier
+        if node contains goal state, return the solution.
+
+![Approach intial state](/images/search/approach_initial.png)
